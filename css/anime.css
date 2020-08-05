@@ -1,0 +1,83 @@
+@charset "UFT-8";
+
+/* PCサイズ */
+@media screen and (min-width: 767px) { /*ウィンドウ幅が767px以上の場合に適用*/
+#menu-bg {
+background-color:  #6c7cbb; /*青色*/
+}
+}
+
+/* タブレットサイズ */
+@media screen and (max-width: 767px) { /*ウィンドウ幅が最大767pxまでの場合に適用*/
+    #menu-bg {
+    background-color: #6c7cbb; /*赤色*/
+}
+}
+
+/* スマホサイズ */
+@media screen and (max-width: 479px) { /*ウィンドウ幅が最大479pxまでの場合に適用*/
+    #menu-bg {
+    background-color:  #6c7cbb; /*緑色*/
+}
+}
+
+
+
+/* #include{
+    padding-top: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    max-width: auto;
+} */
+
+
+anime{
+    width: 100%;
+    height: 100%;
+}
+
+
+path {
+fill: none; /*塗り*/
+stroke: rgb(48, 28, 121); /*線の色*/
+stroke-dasharray: 2000;/*線の間隔*/
+stroke-dashoffset: 1000;/*線の開始位置*/
+stroke-width: 0.5;/*線の太さ*/
+animation: write 3s ease-in forwards;
+/* animation: dash 5s linear forwards; */
+-webkit-animation: write 2s ease-in forwards;
+
+}
+
+
+@keyframes write {
+0% {
+stroke-dashoffset: 2000;
+fill:transparent;
+}
+50% {
+fill:transparent;
+}
+100% {
+stroke-dashoffset: 0;
+fill: rgb(48, 28, 121);
+}
+}
+
+@-webkit-keyframes write {
+0% {
+stroke-dashoffset: 2000;
+fill:transparent;
+}
+50% {
+fill:transparent;
+}
+100% {
+stroke-dashoffset: 0;
+fill:rgb(30, 32, 100);
+}
+}
+

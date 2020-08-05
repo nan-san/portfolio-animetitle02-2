@@ -1,0 +1,20 @@
+CORSエラー
+　でhtml、css、jqueryのサイトが開けなかったので、ローカルサーバーを導入し開けた。
+
+参考サイト：https://qiita.com/terufumi1122/items/39b2a3659bc585c07f64
+
+エラー文章：FireFoxのデベロッパーツールで確認したもの
+
+クロスオリジン要求をブロックしました: 同一生成元ポリシーにより、file:///〇〇 にあるリモートリソースの読み込みは拒否されます (理由: CORS 要求が http でない)。
+
+今回は一瞬でサーバー構築出来るhttp-serverを使用し解決した。
+
+①	インストールする
+npm install -g http-server
+
+②	立ち上げる↓
+http-server
+
+③	http://localhost:8080/にアクセス
+
+完了！
