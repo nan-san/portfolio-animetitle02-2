@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="css/anime.css">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/ico" href="img/me.png">
+    <link rel="icon" type="image/ico" href="img/kao.png">
    
    
      <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css" rel="stylesheet">
@@ -44,6 +44,12 @@
     <!-- BootstrapのJS読み込み -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
+    <script type="text/javascript" src="js/anime.min.js"></script>
+    <script>
+    $(function(){ 
+    $.ajaxSetup({cache:false}); $("#include").load("anime.html"); 
+    });
+    </script>
    
 </head>
 
@@ -59,11 +65,15 @@
             <script>
                window.onload = function() { loadMedia(); }
             </script>
+            
          </div>
       </div>
 
-
-
+     <div class="container">
+         <div class="box">
+             <div id="include"></div> 
+         </div>
+     </div>
 
 
 
@@ -113,7 +123,7 @@
                     </div>
                     <div class="col-md-8 col-xs-12">
                         <div class="list" >
-                            <ul>
+                            <ul class="">
                                 <li>氏名:　なん</li>
                                 <li>出身：　東京、千葉、ドイツ</li>
                                 <li>学歴：　多摩美術大学院 絵画学科 版画専攻、メディアアーツ尚美専門学校
@@ -124,11 +134,17 @@
                             
                                 </li>
                                 <li>好きな事：　多肉植物栽培、散歩、自由に踊る、キャンプ、版画</li>
-                                <li>
+                            
+                                <hr>
+                                <li class="block">
                                     
                                     <p>Github：
-                                    <a class="btn02" href="https://github.com/minamiatsuko?tab=repositories" >こちらから
+                                    <a class="btn02" href="https://github.com/minamiatsuko?tab=repositories" width="31" height="31" > <img src="img/github-logo.png" width="30" height="30" >
                                     </a></p>
+                                    <p>twitter：
+                                    <a class="btn02" href="https://twitter.com/0ooiiioo0" > <img src="img/twitter01.png" width="30" height="30" >
+                                    </a></p>
+                                    
                                     <p>Blog：
                                     <a class="btn02" href="https://kitztzki.com" >
                                     キツツキブログ
@@ -157,6 +173,7 @@
                         <p>Python（Django）　　■■</p>
                         <p>anime.js　　■</p>
                         <p>Photoshop　　■■■■</p>
+                        <p>Filmora9, ExpressAnimate　　■■</p>
                         <p>Backlog、Slack、Chatwork</p>
                      </div>
                  </div>
@@ -165,9 +182,11 @@
                      <div class="box3">
                         <h3 class="color-wrench"><i class="fas fa-laptop-code icon-size"></i></span>作る</h3>
                         <p>Webページコーディング</p>
-                         <p>コンタクトフォーム実装</p>
+                         <p>(コンタクトフォーム実装)</p>
                          <p>Webバナー＆サイトデザイン</p>
+                         <p>Gifアニメーション</p>
                          <p>イラスト</p>
+                         <p>動画編集</p>
                          <p></p>
                      </div>
                  </div>
@@ -265,20 +284,20 @@
                         <div class="col-sm-6 col-md-4">
                             <div class="box6">
                                 <a class="btn" href="img/image05.png" data-lightbox="group">
-                                    <h3>LP&バナーデザイン</h3>
-                                    <p class="moji">（Photoshop, Illustrator使用）</p>
+                                    <h3>デザイン</h3>
+                                    <p class="moji">バナー・カンプ</p>
                                     <p>自然派化粧品</p>
-                                    <img src="img/image07.jpg" width="300" height="250">
+                                    <img src="img/image07.jpg" width="290" height="250">
                                 </a>   
                             </div> 
                         </div>   
                         <div class="col-sm-6 col-md-4">
                                 <div class="box6">
                                     <a class="btn"  href="img/LP German Sprach.jpg" data-lightbox="group">
-                                    <h3>LP＆バナーデザイン</h3>
-                                    <p class="moji">（Photoshop, Illustrator使用）</p>
+                                    <h3>デザイン</h3>
+                                    <p>バナー・カンプ</ｐ>
                                     <p>ドイツ語会話</p>
-                                    <img src="img/image08.jpg" width="300" height="250">
+                                    <img src="img/image08.jpg" width="250" height="250">
                                 </a>
                                 </div>
                         </div>           
@@ -288,7 +307,7 @@
                                 <h3>イラスト</h3>
                                 <p>木版画・リトグラフ</p>
                                 <p>アクリル画・水彩画</p>
-                                <img src="img/image06.jpg"width="300" height="180">
+                                <img src="img/image06.jpg"width="290" height="180">
                                 </a>
                             </div>
                         </div>                

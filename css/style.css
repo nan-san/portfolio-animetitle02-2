@@ -19,17 +19,6 @@ body {
   padding-bottom: 5rem;
 }
 
-/* .box7{
-  display: block;
-  position: absolute;
-  background-color: #9f8fff;
-  top: 0;
-	left: 0;
-	width: 100%;
-  height: 100%;
-  padding-top: 0;
-} */
-
 .wrapper{
   padding-top: 0;
   
@@ -42,28 +31,19 @@ body {
 
 }
 
+.box{
+  width: 100%;
+  height: auto;
+  position: relative;
+}
 
 #include{
  padding-top: 3rem;
  text-align: center;
 }
 
-.contents {
-  max-width: 400px;
-  margin: auto;
-}
-.svg-wrapper {
-  position: relative;
-  width: 100%;
-  padding-top: 100%; /* SVG高さ / SVG幅 * 100 */
-}
-.svg-wrapper svg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
+
+/* About部分 */
 
 #about{
   font-size: 50px;
@@ -91,12 +71,27 @@ ul .list{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+
+.block li{
+  display: inline;
+  text-align: center;
+  width:10px; 
+  height: 10px; 
+  background: skyblue;
+  margin-left: 2rem;
+}
+
+.btn02:hover{
+  color: #3fefee;
+
+}
+
 .box001{
   background-color: #fff;
   width: 100%;
   height: 100%;
   margin-top: 5rem;
-  padding-top: 7rem;
+  padding-top: 5rem;
 }
 
 
@@ -108,11 +103,10 @@ ul .list{
   height: 100%;
 }
 
-.starter-template {
-  padding: 20px px;
-  /* background-color: white; */
-  background-color: rgb(250, 245, 218);
-}
+
+
+
+/* スキル部分 */
 
 .box01{
   text-align: center;
@@ -238,18 +232,18 @@ ul .list{
 
 
 .btn{
-  display       : inline-block;
-
+  display: inline-block;
+  text-align: center;
 }
 
 
-.btn img{
+/* .btn img{
   
   margin-top: 30px;
   width: 100%;
   color: #9f8fff;
   margin-bottom: 1em;
-}
+} */
 
 
 
@@ -257,22 +251,20 @@ ul .list{
   color: #5d627b;
   margin-top: 1em;
   margin-bottom: 0.5em;
-  font-size: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 18px;
+  
 }
 
-.btn:hover {
+.btn :hover {
   /* box-shadow: 0 3px 5px rgb(58, 78, 78); */
   background-color: #9f8fff;
   /* padding: 30px; */
 }
 
 /* 文字の折り返し */
-p{
-  width: 100%;
-}
-p.moji{
-  word-break: break-all;
-}
+
 
 
 .box5 {
@@ -312,7 +304,9 @@ background-color: #9f8fff;
 }
   
 
-
+h3{
+  text-align: center;
+}
 
 
 .box03{
